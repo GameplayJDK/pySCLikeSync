@@ -44,6 +44,7 @@ Known bugs are:
 * Some downloads fail (the cause is unknwon, you might have to run the downloader twice, in different directories to get get all tracks; You might want to use the [manual browser-based method](http://gameplayjdk.wordpress.com/2014/01/10/how-to-download-any-track-from-soundcloud-com-10-01-2014/) if you only need one or two single tracks; in v1.0, v1.1, v1.2)
 * Some downloads freeze (caused by outdated AWS-keys; in v1.1 only)
 * Missing `<strm>.flush()` (which causes all t_id elements to be written as `<strm>.close()` is called; in [this commit](https://github.com/GameplayJDK/pySCLikeSync/commit/07178d83d5480b5ffafcc4ea612f21669262c188) (07178d8) of v1.2 only)
+* Uncought exception for httpStatusCode-404 (which let's the program stop with a fatal tl-error; in [this commit](https://github.com/GameplayJDK/pySCLikeSync/commit/1dfbeeaa79edbb456cb2a54895f70fa8b4c2ca2b) (1dfbeea) of v1.2 only)
 
 pySCLikeSync.py is Copyright 2014 of GameplayJDK and registered under GPLv3 which you can find [here](https://raw.githubusercontent.com/GameplayJDK/pySCLikeSync/master/LICENSE).
 ```python
