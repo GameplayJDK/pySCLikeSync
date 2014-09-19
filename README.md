@@ -8,9 +8,11 @@ It does require 2 moduels (install them via `pip install <module>`).
 * [Soundcloud](https://github.com/soundcloud/soundcloud-python) e.g. `pip install soundcloud`
 * [mutagen](https://bitbucket.org/lazka/mutagen) e.g. `pip install mutagen` (ignored < 1.3)
 
-On linux the `pip` commands might require `sudo` access. It only works with python 2.7 due to the print-print()-changes and the urllib module, which is removed in python 3.X (until it's installed manually). Currently there are no plans to release a port to python 3.4, since python 2.7 is still the commonly preinstalled version on linux os.
+On linux the `pip` commands might require `sudo` access.
 
-If the download of one track seems to take too long and there is no significant change to the filesize, use `CTRL + C` to interrupt the current download and skip it (this doesn't remove the t_id and the file!).
+This script only works with python 2.7 due to the print-print()-changes and the urllib module, which is removed in python 3.X (until it's installed manually). Currently there are no plans to release a port to python 3.4, since python 2.7 is still the commonly preinstalled version on linux os.
+
+If the download process of one track seems to take too long and there is no significant change to the filesize, use `CTRL + C` to interrupt the current download and skip it. This doesn't remove the t_id and the file, so you might need to remove those by hand.
 
 Download it:
 * [v1.0](http://download1324.mediafire.com/m142bqeg5ikg/zt4x9ixu56rw4b5/pySCLikeSync-v1.0.py)
@@ -37,6 +39,11 @@ It will support:
 * Named argument (`--<ARGN> <ARGV> ...`)
 * Support for url export to a file (to use a dlmgr/prg like `wget` for downloading)
 * Functions and multithreading (`code impl-`)
+
+Known bugs are:
+* Some downloads fail (the cause is unknwon, you might have to run the downloader twice, in different directories to get get all tracks; You might want to use the [manual browser-based method](http://gameplayjdk.wordpress.com/2014/01/10/how-to-download-any-track-from-soundcloud-com-10-01-2014/) if you only need one or two single tracks; in v1.0, v1.1, v1.2)
+* Some downloads freeze (caused by outdated AWS-keys; in v1.1 only)
+* Missing `<strm>.flush()` (which causes all t_id elements to be written as `<strm>.close()` is called; in [this commit](https://github.com/GameplayJDK/pySCLikeSync/commit/07178d83d5480b5ffafcc4ea612f21669262c188) (07178d8) of v1.2 only)
 
 pySCLikeSync.py is Copyright 2014 of GameplayJDK and registered under GPLv3 which you can find [here](https://raw.githubusercontent.com/GameplayJDK/pySCLikeSync/master/LICENSE).
 ```python
