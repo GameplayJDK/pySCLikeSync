@@ -45,20 +45,23 @@ try:
     count = 0
     print pre+"Downloading new tracks..."
     for track in tracks:
-        t_name = track.title
-        t_url = client.get(track.stream_url, allow_redirects=False).location
-        t_id = track.id
-        if str(t_id) not in toskip:
-            try:
-                urllib.urlretrieve(t_url, t_name+".mp3")
-                cound = count+1
-                track_id_store.write(str(t_id)+"\n")
-                track_id_store.flush()
-                print pre+"Successfully downloaded '"+t_url+"' to '"+t_name+".mp3'."
-            except:
-                print pre+"Failed to download '"+t_url+"' to '"+t_name+".mp3'."
-        else:
-            print pre+"Skipped download of '"+t_url+"' to '"+t_name+".mp3'."
+        try:
+            t_name = track.title
+            t_url = client.get(track.stream_url, allow_redirects=False).location
+            t_id = track.id
+            if str(t_id) not in toskip:
+                try:
+                    urllib.urlretrieve(t_url, t_name+".mp3")
+                    cound = count+1
+                    track_id_store.write(str(t_id)+"\n")
+                    track_id_store.flush()
+                    print pre+"Successfully downloaded '"+t_url+"' to '"+t_name+".mp3'."
+                except:
+                    print pre+"Failed to download '"+t_url+"' to '"+t_name+".mp3'."
+            else:
+                print pre+"Skipped download of '"+t_url+"' to '"+t_name+".mp3'."
+        except:
+            print pre+"Failed to download track. (This is likely being caused by httpStatusCode-404 of a removed track)."
     track_id_store.close()
     print pre+"Downloaded '"+str(count)+"/"+str(len(tracks))+"'' tracks."
     count = 0
