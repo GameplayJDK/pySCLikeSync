@@ -53,6 +53,7 @@ try:
                 urllib.urlretrieve(t_url, t_name+".mp3")
                 cound = count+1
                 track_id_store.write(str(t_id)+"\n")
+                track_id_store.flush()
                 print pre+"Successfully downloaded '"+t_url+"' to '"+t_name+".mp3'."
             except:
                 print pre+"Failed to download '"+t_url+"' to '"+t_name+".mp3'."
