@@ -37,3 +37,12 @@ It will support:
 * Named argument (`--<ARGN> <ARGV> ...`)
 * Support for url export to a file (to use a dlmgr/prg like `wget` for downloading)
 * Functions and multithreading (`code impl-`)
+
+pySCLikeSync.py is Copyright 2014 of GameplayJDK and registered under GPLv3 which you can find [here](https://raw.githubusercontent.com/GameplayJDK/pySCLikeSync/master/LICENSE).
+```python
+[...]
+# pySCLikeSync.py by GameplayJDK,
+# Copyright 2014 (c) GameplayJDK.de,
+# All rights reserved until further notice
+[...]
+```
