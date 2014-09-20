@@ -17,7 +17,7 @@ If the download process of one track seems to take too long and there is no sign
 Download it:
 * [v1.0](http://download1324.mediafire.com/m142bqeg5ikg/zt4x9ixu56rw4b5/pySCLikeSync-v1.0.py)
 * [v1.1](http://download944.mediafire.com/501ls0eo9pfg/7oryhqnbjzrn8ec/pySCLikeSync-v1.1.py)
-* [v1.2](http://download1512.mediafire.com/zsv071ksr6vg/2s3tbob9pzu27f3/pySCLikeSync-v1.2.py)
+* [v1.2](http://download1585.mediafire.com/xpdssbdehpjg/2s3tbob9pzu27f3/pySCLikeSync-v1.2.py)
 
 The mf download may need up 3 seconds to (re)start.
 
