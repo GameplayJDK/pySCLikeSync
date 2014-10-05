@@ -21,6 +21,8 @@ Download it:
 
 The mf download may need up 3 seconds to (re)start.
 
+You can use Sublime Text 2 (or 3) to edit the files since the related `.sublime-project` file is contained. I don't recommend you to use the contained `.sublime-workspace` file tho', because it's optimized for my system (`eOS freya b1`) and will produce a few errors if you use it 'as-is' on your computer.
+
 Currently it supports:
 * Fetching urls from the soundcloud api
 * Downloading the tracks (with automatic naming)
@@ -55,4 +57,4 @@ pySCLikeSync.py is Copyright 2014 of GameplayJDK and registered under GPLv3 whic
 # All rights reserved until further notice
 [...]
 ```
-(Last updated `Sa Sep 20 \n 10:23`)
+(Last updated `So Okt 05 \n 19:26`)
