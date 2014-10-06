@@ -43,9 +43,11 @@ It will support:
 * Named argument (`--<ARGN> <ARGV> ...`)
 * Support for url export to a file (to use a dlmgr/prg like `wget` for downloading)
 * Functions and multithreading (`code impl-`)
+* Keep old id's in list (`open("teack_id_store", 'a')`)
 
 Known bugs are:
-* Some downloads fail (the cause is unknwon, you might have to run the downloader twice, in different directories to get get all tracks; You might want to use the [manual browser-based method](http://gameplayjdk.wordpress.com/2014/01/10/how-to-download-any-track-from-soundcloud-com-10-01-2014/) if you only need one or two single tracks; in v1.0, v1.1, v1.2)
+* Some downloads fail (the cause is unknwon, you might have to run the downloader twice, in different directories to get get all tracks; You might want to use the [manual browser-based method](http://gameplayjdk.wordpress.com/2014/01/10/how-to-download-any-track-from-soundcloud-com-10-01-2014/) if you only need one or two single tracks; in v1.0, v1.1, v1.2, v1.3)
+* The `track_id_store` file is overwritten, so older downloads are removed from the list of existing tracks (the script uses `w`, which overwrites the old content, instead of `a`, which appends to the file; in v1.1, v1.2, v1.3)
 * Some downloads freeze (caused by outdated AWS-keys; in v1.1 only)
 * Resource `track_id_store` never gets released, missing `<strm>.close()` (which suppresses saving any t_id to the file; in [this commit (initial/f)](https://github.com/GameplayJDK/pySCLikeSync/commit/1c780f01b4954aab4cad8a1dcedcb099041d2600) (1c780f0) of v1.1 only)
 * Missing `<strm>.flush()` (which causes all t_id elements to be written as `<strm>.close()` is called; in [this commit](https://github.com/GameplayJDK/pySCLikeSync/commit/07178d83d5480b5ffafcc4ea612f21669262c188) (07178d8) of v1.2 only)
