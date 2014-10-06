@@ -21,6 +21,8 @@ Download it:
 
 The mf download may need up 3 seconds to (re)start.
 
+__I recommend you [this tutorial](http://gameplayjdk.wordpress.com/2014/07/28/tutorial-how-to-use-pysclikesync-to-download-your-favourite-tracks-from-soundcloud-28-07-2014/) to get familiar with the use of pySCLikeSync on my wordpress blog.__
+
 You can use Sublime Text 2 (or 3) to edit the files since the related `.sublime-project` file is contained. I don't recommend you to use the contained `.sublime-workspace` file tho', because it's optimized for my system (`eOS freya b1`) and will produce a few errors if you use it 'as-is' on your computer.
 
 Currently it supports:
@@ -57,4 +59,4 @@ pySCLikeSync.py is Copyright 2014 of GameplayJDK and registered under GPLv3 whic
 # All rights reserved until further notice
 [...]
 ```
-(Last updated `So Okt 05 \n 19:26`)
+(Last updated `Mo Okt 06 \n 17:13`)
