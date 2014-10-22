@@ -15,11 +15,12 @@ This script only works with python 2.7 due to the print-print()-changes and the 
 If the download process of one track seems to take too long and there is no significant change to the filesize, use `CTRL + C` to interrupt the current download and skip it. This doesn't remove the t_id and the file, so you might need to remove those by hand.
 
 Download it:
-* [v1.0](http://download1324.mediafire.com/m142bqeg5ikg/zt4x9ixu56rw4b5/pySCLikeSync-v1.0.py)
-* [v1.1](http://download944.mediafire.com/501ls0eo9pfg/7oryhqnbjzrn8ec/pySCLikeSync-v1.1.py)
-* [v1.2](http://download1585.mediafire.com/xpdssbdehpjg/2s3tbob9pzu27f3/pySCLikeSync-v1.2.py)
+* v1.0 ( [direct](http://download1324.mediafire.com/m142bqeg5ikg/zt4x9ixu56rw4b5/pySCLikeSync-v1.0.py) ) ( [mirror](http://www.mediafire.com/download/zt4x9ixu56rw4b5/pySCLikeSync-v1.0.py) )
+* v1.1 ( [direct](http://download944.mediafire.com/501ls0eo9pfg/7oryhqnbjzrn8ec/pySCLikeSync-v1.1.py) ) ( [mirror](http://www.mediafire.com/download/7oryhqnbjzrn8ec/pySCLikeSync-v1.1.py) )
+* v1.2 ( [direct](http://download1585.mediafire.com/xpdssbdehpjg/2s3tbob9pzu27f3/pySCLikeSync-v1.2.py) ) ( [mirror](http://www.mediafire.com/download/2s3tbob9pzu27f3/pySCLikeSync-v1.2.py) )
+* v1.3 ( [direct](http://download948.mediafire.com/t4y1n666z76g/npogv6z93z9v16f/pySCLikeSync-v1.3.py) ) ( [mirror](http://www.mediafire.com/download/npogv6z93z9v16f/pySCLikeSync-v1.3.py) )
 
-The mf download may need up 3 seconds to (re)start.
+The 'direct' mf download may need up to 3 seconds to (re)start.
 
 __I recommend you [this tutorial](http://gameplayjdk.wordpress.com/2014/07/28/tutorial-how-to-use-pysclikesync-to-download-your-favourite-tracks-from-soundcloud-28-07-2014/) to get familiar with the use of pySCLikeSync on my wordpress blog.__
 
@@ -61,4 +62,6 @@ pySCLikeSync.py is Copyright 2014 of GameplayJDK and registered under GPLv3 whic
 # All rights reserved until further notice
 [...]
 ```
+pySCLikeSync is registered under GPLv3. Please read [LICENSE](LICENSE) for more information.
+
 (Last updated `Mi Okt 22 \n 11:08`)
