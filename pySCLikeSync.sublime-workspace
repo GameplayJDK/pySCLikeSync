@@ -47,22 +47,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "src/pySCLikeSync-v1.3.py",
-			"settings":
-			{
-				"buffer_size": 3819,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/pySCLikeSync-v1.2.py",
-			"settings":
-			{
-				"buffer_size": 3145,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -88,8 +72,10 @@
 	},
 	"file_history":
 	[
-		"/usr/share/applications/netbeans-8.0.1.desktop",
+		"/home/gameplayjdk/Documents/tmp/pySCLikeSync-master/src/requirements.txt",
 		"/home/gameplayjdk/Documents/tmp/pySCLikeSync-master/src/pySCLikeSync-v1.2.py",
+		"/home/gameplayjdk/Documents/tmp/pySCLikeSync-master/src/pySCLikeSync-v1.3.py",
+		"/usr/share/applications/netbeans-8.0.1.desktop",
 		"/home/gameplayjdk/Documents/tmp/pySCLikeSync-master/src/pySCLikeSync-v1.1.py",
 		"/home/gameplayjdk/Documents/tmp/pySCLikeSync-master/src/pySCLikeSync-v1.0.py",
 		"/usr/share/applications/netbeans-8.0.desktop",
@@ -142,65 +128,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/pySCLikeSync-v1.3.py",
-					"settings":
-					{
-						"buffer_size": 3819,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3211,
-								3211
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 867.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/pySCLikeSync-v1.2.py",
-					"settings":
-					{
-						"buffer_size": 3145,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1903,
-								1903
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 663.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
