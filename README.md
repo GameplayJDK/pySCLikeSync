@@ -31,12 +31,15 @@ Currently it supports:
 * Downloading the tracks (with automatic naming)
 * Avoiding duplications (by caching every id in `track_id_store`)
 * Error handling (in case of a fatal error the user get a recommendation to report the bug or to visit the wiki to read about common errors)
+* Keep old id's in list (appending to `track_id_store`)
+* Automated ID3-Tagging (setting)
+* TUI (terminal output only)
 
 It will support:
 * Proper fail detection (check for nulled size)
 * Proper error handling (error reports)
-* TUI (later it may also have basic GUI)
-* Automated ID3-Tagging (creating and updating)
+* Basic GUI
+* Automated ID3-Tagging (creating)
 * Detailed track range configuration (settable track offset)
 * Optional naming pattern for the files (id, title, etc.)
 * Logging (output to file and console)
@@ -44,7 +47,9 @@ It will support:
 * Named argument (`--<ARGN> <ARGV> ...`)
 * Support for url export to a file (to use a dlmgr/prg like `wget` for downloading)
 * Functions and multithreading (`code impl-`)
-* Keep old id's in list (`open("teack_id_store", 'a')`)
+* Counting files while outputting (prefixing the current tracks number)
+
+[✓] [✗]
 
 Known bugs are:
 * Some downloads fail (the cause is unknwon, you might have to run the downloader twice, in different directories to get get all tracks; You might want to use the [manual browser-based method](http://gameplayjdk.wordpress.com/2014/01/10/how-to-download-any-track-from-soundcloud-com-10-01-2014/) if you only need one or two single tracks; in v1.0, v1.1, v1.2, v1.3)
