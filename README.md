@@ -6,7 +6,7 @@ A simple soundcloud downloader written in python (2.7).
 It does require 2 moduels (install them via `pip install <module>`).
 
 * [Soundcloud](https://github.com/soundcloud/soundcloud-python) e.g. `pip install soundcloud`
-* [mutagen](https://bitbucket.org/lazka/mutagen) e.g. `pip install mutagen` (ignored < 1.3)
+* [mutagen](https://bitbucket.org/lazka/mutagen) e.g. `pip install mutagen` (ignored < 1.4)
 
 On linux the `pip` commands might require `sudo` access.
 
@@ -45,11 +45,12 @@ It will support:
 * Logging (output to file and console)
 * Message type (long, short or detailed)
 * Named argument (`--<ARGN> <ARGV> ...`)
-* Support for url export to a file (to use a dlmgr/prg like `wget` for downloading)
-* Functions and multithreading (`code impl-`)
+* Support for url export to a file (to use a downloadmanager/-program like `wget` for downloading)
+* Functions and multithreading (download multiple files at once)
+* Allow multiple target users
+* Allow json config files
 * Counting files while outputting (prefixing the current tracks number)
-
-[✓] [✗]
+* Shortening the track urls (better output formatting)
 
 Known bugs are:
 * Some downloads fail (the cause is unknwon, you might have to run the downloader twice, in different directories to get get all tracks; You might want to use the [manual browser-based method](http://gameplayjdk.wordpress.com/2014/01/10/how-to-download-any-track-from-soundcloud-com-10-01-2014/) if you only need one or two single tracks; in v1.0, v1.1, v1.2, v1.3)
@@ -59,14 +60,12 @@ Known bugs are:
 * Missing `<strm>.flush()` (which causes all t_id elements to be written as `<strm>.close()` is called; in [this commit](https://github.com/GameplayJDK/pySCLikeSync/commit/07178d83d5480b5ffafcc4ea612f21669262c188) (07178d8) of v1.2 only)
 * Uncought exception for httpStatusCode-404 (which lets the program stop with a fatal tl-error; in [this commit](https://github.com/GameplayJDK/pySCLikeSync/commit/1dfbeeaa79edbb456cb2a54895f70fa8b4c2ca2b) (1dfbeea) of v1.2 only)
 
-pySCLikeSync.py is Copyright 2014 of GameplayJDK and registered under GPLv3 which you can find [here](https://raw.githubusercontent.com/GameplayJDK/pySCLikeSync/master/LICENSE).
+pySCLikeSync.py is Copyright 2014-2015 of GameplayJDK and registered under GPLv3 which you can find [here](https://raw.githubusercontent.com/GameplayJDK/pySCLikeSync/master/LICENSE).
 ```python
 [...]
 # pySCLikeSync.py by GameplayJDK,
-# Copyright 2014 (c) GameplayJDK.de,
+# Copyright 2014-2015 (c) GameplayJDK.de,
 # All rights reserved until further notice
 [...]
 ```
-pySCLikeSync is registered under GPLv3. Please read [LICENSE](LICENSE) for more information.
-
-(Last updated `Mi Okt 22 \n 11:08`)
+(Last updated `Thu Apr 02 \n 18:37`)
