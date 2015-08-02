@@ -1,3 +1,5 @@
+## pySCLikeSync is no longer developed actively. It is currently being rewritten to support more operations with less dependancies.
+
 pySCLikeSync
 ============
 
